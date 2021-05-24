@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(lib/fonts/Roboto-Medium.ttf);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    height: 90px;
+    border-bottom: 5px solid #CCE85C;
+    font-size: 15px;
+    margin-bottom: 70px;
+}
+
+.navbar-brand {
+    font-size: 52px;
+   }
+.navbar-brand >span {
+    font-size: 52px;
+ color:#CCE85C;
+}
+
+nav .container > span{
+    font-size: 15px;
+}
+.nav-item{
+    width: 150px;
+}
+
+.container-md {
+    width: 1100px;
+}
+
+.gallery_title h2, .gallery_title a{
+    display: inline-block;
+}
+.gallery_title h2 {    
+    font-size: 28px;
+    color: #c2c2c2;
+}
+.gallery_title a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+.gallery_img{
+    display: inline-block;   
+ width: 180px;
+ height: 200px;
+}
+
+.gallery_img img {
+    width: 180px;
+    height: 180px;
+}
+
+.banner {
+    margin-top: 86px;   
+    height: 177px;
+    background-color: #CCE85C;
+}
+
+.banner article {
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 53px;
+    height: 177px;  
+}
+
+.banner article p:first-child{
+    font-size: 24px;
+    font-weight: bold;
+    color: #747E48;
+}
+
+.banner article p:last-child{
+    font-size: 14px;
+    color: #747E48;
+}
+
+.banner button {
+    width: 180px;
+    height: 50px;
+    font-size: 19px;
+    background-color: #FFFFFF;
+    border-radius: 28px;
+    border: none;
+
+    position: relative;
+   right: -300px
+}
