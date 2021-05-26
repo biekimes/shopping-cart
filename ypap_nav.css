@@ -42,15 +42,13 @@ nav .container > span{
     border: 3px solid #CCE85C;
 }
 
-
 .container-md {
     width: 1100px;
 }
 
 footer {
     width: 100%;
-    height: 184px;
-    margin-top: 88px;
+    height: 184px;    
     padding-top: 58px;  
     background-color: #828282;
     font-size: 14px;
