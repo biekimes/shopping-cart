@@ -89,7 +89,7 @@ background-repeat: no-repeat;
 background-size: 80%;
 
 position: fixed;
-right: 500px;
+right:250px;
 bottom:240px;
 }
 
@@ -114,3 +114,14 @@ bottom:240px;
 .foster_info h3, p{
     font-size: 19px;
 }
+
+.foster_apply {
+    font-size: 15px;
+    height: 50px;
+    line-height: 36px;
+    background-color: #CCE85C;
+    position: fixed;
+    right: 350px;
+    top: 740px;
+}
+

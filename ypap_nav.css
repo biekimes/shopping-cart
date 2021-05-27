@@ -12,8 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-nav {
-    width: 100%;
+nav {  
     height: 90px;
     border-bottom: 5px solid #CCE85C;
     font-size: 15px;
