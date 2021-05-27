@@ -74,7 +74,7 @@ transition: 300ms;
  border: 1px solid #c2c2c2;
 }
 
-.top_btn{
+.top_btn{  
     display: none;
     border: none;
     width: 60px;
@@ -87,6 +87,10 @@ background-repeat: no-repeat;
 background-size: 80%;
 
 position: fixed;
-right: 420px;
-bottom:240px
+right: 500px;
+bottom:240px;
+}
+
+.show {
+    display: block;
 }

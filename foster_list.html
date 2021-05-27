@@ -33,9 +33,18 @@
                 $(".btn").attr("disabled", "true")
             });
 
-            if (document.body.scrollTop > 1) {
-                $(".top_btn").css("display", "block");
-            }
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 300) {
+                    $(".top_btn").addClass("show")
+                } else {
+                    $(".top_btn").removeClass("show");
+                }
+            });
+
+            $(".top_btn").on('click', function (e) {
+                e.preventDefault();
+                $('html').animate({ scrollTop: 0 }, 100);
+            });
 
         })
     </script>
