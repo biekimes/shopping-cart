@@ -29,16 +29,18 @@ h2{
 
 .foster_pic dt {
     font-size: 24px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .foster_pic dd{
     font-size: 19px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .foster_pic {    
-    padding-top: 200px;
-    text-align: center;
-    color: #ffffff;
+    padding-top: 200px;    
     width: 280px;
     height: 280px;
     border-radius: 60%;
@@ -93,4 +95,22 @@ bottom:240px;
 
 .show {
     display: block;
+}
+
+.foster_pic > .foster_info {
+    font-size: 19px;
+    width: 300px;
+    background: rgba(238, 252, 182, 0.7);
+    border: 1px solid #747E48;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    position: absolute;
+    top:660px;
+    left:750px;
+    display: none;
+  }
+
+.foster_info h3, p{
+    font-size: 19px;
 }
