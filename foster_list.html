@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임시보호</title>
+    <link rel="stylesheet" href="lib/bootstrap-5.0.1-dist/css/bootstrap.css">
+    <script src="lib/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="ypap_nav.css">
+    <link rel="stylesheet" href="foster_list.css">
+
+    <script>
+        $(function () {
+            $(".dropdown-menu").hide();
+            $(".dropdown").mouseenter(function () {
+                $(".dropdown-menu").stop().slideDown(300);
+            });
+            $(".dropdown").mouseleave(function () {
+                $(".dropdown-menu").stop().slideUp(300);
+            });
+
+            $(".foster_row_hide").hide();
+            $(".btn").click(function () {
+                $(".foster_row_hide").slideDown(300);
+            });
+
+            $(".foster_row_last").hide();
+            $(".btn").click(function () {
+                $(".foster_row_last").slideDown(300);
+                $(".btn").attr("disabled", "true")
+            });
+
+            if (document.body.scrollTop > 10) {
+
+            }
+
+        })
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-0">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Y<span>P</span>A<span>P</span></a>
+            <span class="navbar-brand">용인보호협회</span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-5">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link  active" aria-current="page" href="intro.html">소개</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active" href="#">입양</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link  active" href="#">임보</a>
+                    </li>
+                    <li class="nav-item dropdown ms-5">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            도와주기
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">후원하기</a></li>
+                            <li><a class="dropdown-item" href="#">봉사하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-5">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-6">
+                    <article>
+                        <span class="mb-2"></span>
+                        <h1>임시보호가 왜 필요한가</h1>
+                        <p>아직 입양자를 못 찾아서 시간이 부족해 안락사로 부터 강아지를 구할 수 있는 방법 하나는 임시보호입니다. 건강에 문제가 있어 치료받는 아이들의 경우 임시보호를 통해
+                            스트레스를
+                            덜
+                            받으면서 회복을 촉진 할 수 있습니다.</p>
+                        <p>임시보호자가 되시겠습니까?</p>
+                    </article>
+                </div>
+                <div class="col-6">
+                    <span class="mb-2"></span>
+                    <article>
+                        <h1>임시 보호자로서 필요 사항</h1>
+                        <p>임시보호자로서 역할은 강아지가 건강하게지내고 반려견 생활에 익숙해지게 도와 주는 것 입니다. 임시보호 기간은 보통 1개월에서 4개월 정도 되지만 상황에 따라 기간이
+                            조정 될
+                            수 있습니다. 건강 문제가 있는 강아지가 회복하거나 입양자를 찾으시면 임시보호기간이 종료됩니다. 임시보호자가 입양자가 되는 경우도 있습니다.</p>
+                        <p>임시보호 기간에 강아지가 필요한 것은 다음과 같습니다:</p>
+                        <p>산책시켜주고 애정주기, 필요시 강아지 건강 챙겨주기, 입양이 빨리 될 수 있도록 SNS에 홍보</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>임시보호가 필요한 아이들</h2>
+        <div class="foster_row row mb-5">
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="foster_row row mb-5">
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="foster_row_hide row mb-5">
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="foster_row_last row mb-5">
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="gallery col-3">
+                <div class="foster_pic">
+                    <dl>
+                        <dt>미라</dt>
+                        <dd>2살</dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 offset-5 ">
+                <button class="btn">더보기</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="top_btn pt-4">
+        위로
+    </button>
+
+
+    <footer class="mt-5">
+        <div class="container">
+            <p>YPAP 용인시 동물 보호 협회 기미연 경기도 용인시 처인구 모현면 오산리 193-28 죽전보호소 T. 070-1234-1234 F. 02-1234-1234 E.
+                <a href="mailto:ypap@gmail.com">ypap@gmail.com</a>
+            </p>
+
+            <div class="contact">
+                <a href="#" class="link ms-2 me-5 mt-2">오시는길</a>
+                <a href="#" class="link mt-2">문의하기</a>
+
+                <a href="#" class="social me-2"><img src="lib/icons/instagram.png" alt=""></a>
+                <a href="#" class="social me-5"><img src="lib/icons/facebook.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

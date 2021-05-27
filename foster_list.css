@@ -1,0 +1,91 @@
+header {
+    height: 432px;
+    color: #747E48;
+    background-color: #EEFCB6;
+}
+
+header span {
+    display: inline-block;
+    width: 42px;
+height: 5px;
+background-color: #747E48;
+}
+
+header article h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+header article p{
+    font-size: 19px;
+}
+
+h2{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #C2C2C2;
+}
+
+.foster_pic dt {
+    font-size: 24px;
+}
+
+.foster_pic dd{
+    font-size: 19px;
+}
+
+.foster_pic {    
+    padding-top: 200px;
+    text-align: center;
+    color: #ffffff;
+    width: 280px;
+    height: 280px;
+    border-radius: 60%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery:first-of-type .foster_pic{
+    background-image: url('lib/img/dog8.jpg');
+}
+
+.gallery:nth-of-type(2) .foster_pic{
+    background-image: url('lib/img/dog9.jpg');
+}
+.gallery:nth-of-type(3) .foster_pic{
+    background-image: url('lib/img/dog10.jpg');
+}
+.gallery:nth-of-type(4) .foster_pic{
+    background-image: url('lib/img/dog11.jpg');
+}
+
+.btn {
+    width: 178px;
+height: 60px;
+border-radius: 5px;
+background-color: #c2c2c2;
+transition: 300ms;
+}
+
+.btn:hover {
+ background-color: #ececec;
+ border: 1px solid #c2c2c2;
+}
+
+.top_btn{
+  border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+background-color: #C2C2C2;
+background-image: url('lib/icons/uparrow.png');
+background-position: center -5px;
+background-repeat: no-repeat;
+background-size: 80%;
+
+position: fixed;
+right: 420px;
+bottom:240px
+}
