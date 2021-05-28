@@ -48,14 +48,18 @@ header button:hover {
     color: #828282;
 }
 
-.adopt_row .img {
+.adopt_row .img, .adopt_row_hide .img {
     display: inline-block;
     width: 100%;
     height: 400px;
-   
+   transition: 300ms;
     background-position: 0px -90px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.adopt .img:hover,  .adopt_row_hide .img:hover {
+    transform: scale(1.025);
 }
 
 .adopt_info  {
@@ -78,3 +82,77 @@ font-size: 20px;
     background-image: url('lib/fotos_de_ypap/chonks1.jpg');
     background-position: 0px -70px;
 }
+
+.adopt_row:nth-of-type(2) .col-4:first-of-type .img {
+    background-image: url('lib/fotos_de_ypap/arnie1.jpg');
+}
+.adopt_row:nth-of-type(2) .col-4:nth-of-type(2) .img {
+    background-image: url('lib/fotos_de_ypap/woody2.jpg');
+    background-size: 100%%;
+}
+.adopt_row:nth-of-type(2) .col-4:nth-of-type(3) .img {
+    background-image: url('lib/fotos_de_ypap/chonks1.jpg');
+    background-position: 0px -70px;
+}
+
+.adopt_row:nth-of-type(3) .col-4:first-of-type .img {
+    background-image: url('lib/fotos_de_ypap/arnie1.jpg');
+}
+.adopt_row:nth-of-type(3) .col-4:nth-of-type(2) .img {
+    background-image: url('lib/fotos_de_ypap/buddy1.jpg');
+}
+.adopt_row:nth-of-type(3) .col-4:nth-of-type(3) .img {
+    background-image: url('lib/fotos_de_ypap/chonks1.jpg');
+    background-position: 0px -70px;
+}
+
+.adopt_row_hide .col-4:first-of-type .img {
+    background-image: url('lib/fotos_de_ypap/cujo1.jpg');
+}
+.adopt_row_hide .col-4:nth-of-type(2) .img {   
+    background-image: url('lib/fotos_de_ypap/jelly1.jpg');
+}
+.adopt_row_hide .col-4:nth-of-type(3) .img {
+    background-image: url('lib/fotos_de_ypap/kookie1.jpg');
+}
+
+
+.btn {
+    width: 178px;
+height: 60px;
+border-radius: 5px;
+background-color: #c2c2c2;
+transition: 300ms;
+}
+
+.btn:hover {
+ background-color: #ececec;
+ border: 1px solid #c2c2c2;
+}
+
+
+.top_btn{  
+    display: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+background-color: #C2C2C2;
+background-image: url('lib/icons/uparrow.png');
+background-position: center -5px;
+background-repeat: no-repeat;
+background-size: 80%;
+transition: 300ms;
+position: fixed;
+right:200px;
+bottom:240px;
+}
+
+.top_btn:hover{
+    background-color: #ececec;
+}
+
+.show {
+    display: block;
+}
+
