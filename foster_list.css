@@ -87,10 +87,14 @@ background-image: url('lib/icons/uparrow.png');
 background-position: center -5px;
 background-repeat: no-repeat;
 background-size: 80%;
-
+transition: 300ms;
 position: fixed;
 right:250px;
 bottom:240px;
+}
+
+.top_btn:hover{
+    background-color: #ececec;
 }
 
 .show {
@@ -103,11 +107,7 @@ bottom:240px;
     background: rgba(238, 252, 182, 0.7);
     border: 1px solid #747E48;
     box-sizing: border-box;
-    border-radius: 30px;
-
-    position: absolute;
-    top:660px;
-    left:750px;
+    border-radius: 30px;    
     display: none;
   }
 
@@ -116,12 +116,34 @@ bottom:240px;
 }
 
 .foster_apply {
-    font-size: 15px;
-    height: 50px;
-    line-height: 36px;
+    font-size: 24px;
+    width: 220px;   
+    height: 90px;
     background-color: #CCE85C;
     position: fixed;
     right: 350px;
-    top: 740px;
+    top: 580px;
+    text-align: left;
+    transition: 300ms;
 }
 
+.foster_apply p{
+    display: inline-block;
+    width: 89px;   
+    padding-top: 10px;
+  
+}
+
+.foster_apply img {
+    display: inline-block;
+    width: 40px;
+    height: 50px;   
+    position: relative;
+    top: -12px;
+    left: 60px;
+}
+
+.foster_apply:hover{
+    background-color: #EEFCB6;
+    border: 1px solid #CCE85C;
+}
