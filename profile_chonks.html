@@ -28,18 +28,6 @@
                 $(".btn").attr("disabled", "true");
             });
 
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 800) {
-                    $(".top_btn").addClass('show')
-                } else {
-                    $(".top_btn").removeClass("show");
-                }
-            });
-
-            $(".top_btn").on('click', function (e) {
-                e.preventDefault();
-                $('html').animate({ scrollTop: 0 }, 100);
-            });
 
         })
     </script>
