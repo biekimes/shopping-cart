@@ -46,79 +46,25 @@
                 $('html').animate({ scrollTop: 0 }, 100);
             });
 
-            $(".foster_pic:first").mouseenter(function () {
-                $(".foster_pic:first > .foster_info").css({
-                    'position': 'absolute',
-                    'top': 660,
-                    'left': 550
-                });
-                $(".foster_pic:first > .foster_info").fadeIn(200);
+            //$(window).scroll(function () {
+            //checkOffset();
+            //if ($(window).scrollTop() >= 300) {
+            //        console.log($(window).position().top)
+            //        $(".foster-apply").removeClass();
+            //        $(".foster-apply").addClass("stick")
+            //    } else {
+            //        $(".foster-apply").removeClass();
+            //        $(".foster-apply").addClass("fix")
+            //  }
+            //}); 
+
+            $(".foster_pic").mouseenter(function () {
+                $(this).children(".foster_info").fadeIn(200);
             });
-            $(".foster_pic:first").mouseleave(function () {
-                $(".foster_info").fadeOut(200);
+            $(".foster_pic").mouseleave(function () {
+                $(this).children(".foster_info").fadeOut(200);
             });
 
-            $(".gallery:nth-of-type(2) > .foster_pic").mouseenter(function () {
-                $(".gallery:nth-of-type(2) > .foster_pic > .foster_info").css({
-                    'position': 'absolute',
-                    'top': 660,
-                    'left': 850
-                });
-                $(".gallery:nth-of-type(2) > .foster_pic > .foster_info").fadeIn(200);
-            });
-            $(".gallery:nth-of-type(2) > .foster_pic").mouseleave(function () {
-                $(".gallery:nth-of-type(2) > .foster_pic > .foster_info").fadeOut(200);
-            });
-            $(".gallery:nth-of-type(3) > .foster_pic").mouseenter(function () {
-                $(".gallery:nth-of-type(3) > .foster_pic > .foster_info").css({
-                    'position': 'absolute',
-                    'top': 660,
-                    'left': 1180
-                });
-                $(".gallery:nth-of-type(3) > .foster_pic > .foster_info").fadeIn(200);
-            });
-            $(".gallery:nth-of-type(3) > .foster_pic").mouseleave(function () {
-                $(".gallery:nth-of-type(3) > .foster_pic > .foster_info").fadeOut(200);
-            });
-            $(".gallery:nth-of-type(4) > .foster_pic").mouseenter(function () {
-                $(".gallery:nth-of-type(4) > .foster_pic > .foster_info").css({
-                    'position': 'absolute',
-                    'top': 660,
-                    'left': 1500
-                });
-                $(".gallery:nth-of-type(4) > .foster_pic > .foster_info").fadeIn(200);
-            });
-            $(".gallery:nth-of-type(4) > .foster_pic").mouseleave(function () {
-                $(".gallery:nth-of-type(4) > .foster_pic > .foster_info").fadeOut(200);
-            });
-
-
-            $(".foster_row:nth-of-type(2) >.gallery:first > .foster_pic").mouseenter(function () {
-                $(".foster_row:nth-of-type(2) >.gallery:first > .foster_pic > .foster_info").css({
-                    'position': 'absolute',
-                    'top': 990,
-                    'left': 550
-                });
-                $(".foster_row:nth-of-type(2) >.gallery:first > .foster_pic> .foster_info").fadeIn(200);
-            });
-            $(".foster_row:nth-of-type(2) >.gallery:first > .foster_pic").mouseleave(function () {
-                $(".foster_row:nth-of-type(2) >.gallery:first > .foster_pic> .foster_info").fadeOut(200);
-            });
-
-
-
-            $(".foster_row_hide:first > .gallery:first > .foster_pic").mouseenter(function () {
-                $(".foster_row_hide:first > .gallery:first > .foster_pic > .foster_info").css({
-                    'position': 'absolute',
-                    'top': 1310,
-                    'left': 550
-                });
-                $(".foster_row_hide:first > .gallery:first > .foster_pic > .foster_info").fadeIn(200);
-
-            });
-            $(".foster_row_hide:first > .gallery:first > .foster_pic").mouseleave(function () {
-                $(".foster_row_hide:first > .gallery:first > .foster_pic > .foster_info").fadeOut(200);
-            });
 
 
 
@@ -273,25 +219,43 @@
             <div class="gallery col-3">
                 <div class="foster_pic">
                     <dl>
-                        <dt>미라</dt>
-                        <dd>2살</dt>
+                        <dt>후니</dt>
+                        <dd>5살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
                 <div class="foster_pic">
                     <dl>
-                        <dt>미라</dt>
-                        <dd>2살</dt>
+                        <dt>라라</dt>
+                        <dd>3살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
                 <div class="foster_pic">
                     <dl>
-                        <dt>미라</dt>
+                        <dt>한미</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -317,6 +281,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
@@ -325,6 +295,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
@@ -333,6 +309,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -344,6 +326,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
@@ -352,6 +340,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
@@ -360,6 +354,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
             <div class="gallery col-3">
@@ -368,6 +368,12 @@
                         <dt>미라</dt>
                         <dd>2살</dt>
                     </dl>
+                    <div class="foster_info p-3 m-0">
+                        <h3 class="fw-bold">아름이 소개</h3>
+                        <p>아름이는 사람을 좋아하고 얌전한 2살된 아이입니다.</p>
+                        <p>현재 심장 사상충 치료를 받는 동안 스트레스를 받지 않기 위해 임시보호를 하실 분을 찾습니다.</p>
+                        <p>아름이를 3~4 개월 봐주실 있는분이 필요합니다. </p>
+                    </div>
                 </div>
             </div>
         </div>

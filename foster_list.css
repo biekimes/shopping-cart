@@ -63,6 +63,9 @@ h2{
     background-image: url('lib/img/dog11.jpg');
 }
 
+
+
+
 .btn {
     width: 178px;
 height: 60px;
@@ -109,6 +112,10 @@ bottom:240px;
     box-sizing: border-box;
     border-radius: 30px;    
     display: none;
+
+    position: relative;
+    top: -290px;
+    left:250px;
   }
 
 .foster_info h3, p{
@@ -122,7 +129,7 @@ bottom:240px;
     background-color: #CCE85C;
     position: fixed;
     right: 350px;
-    top: 580px;
+    bottom: 280px;
     text-align: left;
     transition: 300ms;
 }
@@ -131,8 +138,7 @@ bottom:240px;
     display: inline-block;
     width: 89px;   
     padding-top: 10px;
-  
-}
+  }
 
 .foster_apply img {
     display: inline-block;
@@ -147,3 +153,16 @@ bottom:240px;
     background-color: #EEFCB6;
     border: 1px solid #CCE85C;
 }
+
+
+/* .stick{
+    position: absolute;
+    right: 350px;
+    bottom: -450px;
+}
+
+.fix {
+    position: fixed;
+    right: 350px;
+    bottom: 280px;
+} */

@@ -88,7 +88,7 @@ font-size: 20px;
 }
 .adopt_row:nth-of-type(2) .col-4:nth-of-type(2) .img {
     background-image: url('lib/fotos_de_ypap/woody2.jpg');
-    background-size: 100%%;
+    background-size: 100%;
 }
 .adopt_row:nth-of-type(2) .col-4:nth-of-type(3) .img {
     background-image: url('lib/fotos_de_ypap/chonks1.jpg');
@@ -144,8 +144,8 @@ background-repeat: no-repeat;
 background-size: 80%;
 transition: 300ms;
 position: fixed;
-right:200px;
-bottom:240px;
+    right:200px;
+    bottom:240px;
 }
 
 .top_btn:hover{
