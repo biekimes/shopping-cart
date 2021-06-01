@@ -185,14 +185,44 @@
             </p>
 
             <div class="contact">
-                <a href="#" class="link ms-2 me-5 mt-2">오시는길</a>
-                <a href="#" class="link mt-2">문의하기</a>
+                <a href="directions.html" class="link ms-2 me-5 mt-2">오시는길</a>
+                <a href="#" class="link mt-2" id="contact">문의하기</a>
 
-                <a href="#" class="social me-2"><img src="lib/icons/instagram.png" alt=""></a>
-                <a href="#" class="social me-5"><img src="lib/icons/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/ypap.rescue/" class="social me-2"><img src="lib/icons/instagram.png"
+                        alt=""></a>
+                <a href="https://www.facebook.com/ForBonnies/" class="social me-5"><img src="lib/icons/facebook.png"
+                        alt=""></a>
             </div>
         </div>
     </footer>
+
+    <div class="contact_form p-4">
+        <h3 class="mb-0">문의하기</h3>
+        <form method="post" name="frm">
+            <label for="name" class="form-label mb-1"></label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="이름을 적어주세요">
+            <div id="nameAlert" class="form-text ps-2">이름이 필요합니다.</div>
+
+            <label for="email" class="form-label mb-1 mt-3"></label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+                placeholder="이메일을 적어주세요">
+            <div id="emailHelp" class="form-text ps-2">이메일은 공개되지 않습니다.</div>
+            <div id="emailAlert" class="form-text ps-2">이메일이 필요합니다.</div>
+
+            <label for="title" class="form-label mb-1 mt-2"></label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="제목을 적어주세요">
+            <div id="titleAlert" class="form-text ps-2">제목이 필요합니다.</div>
+
+            <label for="msg" class="form-label mb-1 mt-3"></label>
+            <textarea name="msg" id="msg" rows="6" class="form-control" placeholder="문의 내용을 적어주세요"></textarea>
+            <div id="msgAlert" class="form-text ps-2">문의 내용이 필요합니다.</div>
+
+            <button type="submit" class="btn btn-lg px-4 mt-3">문의내용 제출</button>
+        </form>
+
+    </div>
+
+    <script src="contact.js"></script>
 </body>
 
 </html>
