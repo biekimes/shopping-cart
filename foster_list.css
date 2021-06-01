@@ -112,7 +112,7 @@ bottom:240px;
     box-sizing: border-box;
     border-radius: 30px;    
     display: none;
-
+ z-index: 1;
     position: relative;
     top: -290px;
     left:250px;
@@ -126,12 +126,13 @@ bottom:240px;
     font-size: 24px;
     width: 220px;   
     height: 90px;
-    background-color: #CCE85C;
-    position: fixed;
-    right: 350px;
-    bottom: 280px;
+    background-color: #CCE85C;   
     text-align: left;
     transition: 300ms;
+
+    position: sticky;
+    left: 1325px;
+    bottom: 320px;
 }
 
 .foster_apply p{

@@ -24,13 +24,10 @@
 
             $(".foster_row_hide").hide();
             $(".btn").click(function () {
-                $(".foster_row_hide").slideDown(300);
-            });
-
-            $(".foster_row_last").hide();
-            $(".btn").click(function () {
-                $(".foster_row_last").slideDown(300);
-                $(".btn").attr("disabled", "true")
+                $(".foster_row_hide:hidden").slice(0, 1).slideDown(300);
+                if ($(".foster_row_hide:hidden").length === 0) {
+                    $(".btn").attr("disabled", "true");
+                }
             });
 
             $(window).scroll(function () {
@@ -46,17 +43,6 @@
                 $('html').animate({ scrollTop: 0 }, 100);
             });
 
-            //$(window).scroll(function () {
-            //checkOffset();
-            //if ($(window).scrollTop() >= 300) {
-            //        console.log($(window).position().top)
-            //        $(".foster-apply").removeClass();
-            //        $(".foster-apply").addClass("stick")
-            //    } else {
-            //        $(".foster-apply").removeClass();
-            //        $(".foster-apply").addClass("fix")
-            //  }
-            //}); 
 
             $(".foster_pic").mouseenter(function () {
                 $(this).children(".foster_info").fadeIn(200);
@@ -319,7 +305,7 @@
             </div>
         </div>
 
-        <div class="foster_row_last row mb-5">
+        <div class="foster_row_hide row mb-5">
             <div class="gallery col-3">
                 <div class="foster_pic">
                     <dl>

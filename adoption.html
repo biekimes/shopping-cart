@@ -24,8 +24,10 @@
 
             $(".adopt_row_hide").hide();
             $(".btn").click(function () {
-                $(".adopt_row_hide").slideDown(300);
-                $(".btn").attr("disabled", "true");
+                $(".adopt_row_hide:hidden").slice(0, 1).slideDown(300);
+                if ($(".adopt_row_hide:hidden").length === 0) {
+                    $(".btn").attr("disabled", "true");
+                }
             });
 
 
@@ -74,8 +76,8 @@
                             도와주기
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">후원하기</a></li>
-                            <li><a class="dropdown-item" href="#">봉사하기</a></li>
+                            <li><a class="dropdown-item" href="donate.html">후원하기</a></li>
+                            <li><a class="dropdown-item" href="volunteer.html">봉사하기</a></li>
                         </ul>
                     </li>
                 </ul>

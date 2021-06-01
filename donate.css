@@ -1,6 +1,6 @@
 .title span {
     display: inline-block;
-    width: 105px;
+    width: 48px;
 height: 5px;
 background-color: #747E48;
 }
@@ -59,14 +59,25 @@ color: #747E48;
 .donate_items .img {
     width: 100%;
     height: 300px;
-}
-/* .donate_items .img:first-of-type{
-    background-image: url('lib/img/dogcrate.jpg');
     background-size: cover;
-    background-position: center;
-} */
-
-.donate_items  .img:nth-of-type(2){
-    background-image: url('lib/img/dogvet.jpg');
+    background-repeat: no-repeat;
 }
+.donate_items .item:first-of-type .img{
+    background-image: url('lib/img/dogcrate.jpg');   
+    background-position: center;
+} 
+
+.donate_items .item:nth-of-type(2) .img{
+    background-image: url('lib/img/dogvet.jpg');   
+    background-position: center;
+} 
+.donate_items .item:nth-of-type(3) .img{
+    background-image: url('lib/img/dogvet2.jpg');   
+    background-position: center;
+} 
+.donate_items .item:nth-of-type(4) .img{
+    background-image: url('lib/img/dogcone.jpg');   
+    background-position: center;
+} 
+
 
