@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="lib/bootstrap-5.0.1-dist/css/bootstrap.css">
     <script src="lib/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
     <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="contact.js"></script>
     <link rel="stylesheet" href="ypap.css">
 
     <script>
+
         $(function () {
             $(".dropdown-menu").hide();
             $(".dropdown").mouseenter(function () {
@@ -20,6 +22,25 @@
             $(".dropdown").mouseleave(function () {
                 $(".dropdown-menu").stop().slideUp(300);
             });
+
+            $(".gallery").scrollLeft(300);
+
+            $(".contact_form").hide();
+            $("#contact").click(function () {
+                $(".contact_form").fadeIn(300);
+            });
+
+            $("#nameAlert").hide();
+            $("#emailAlert").hide();
+            $("#titleAlert").hide();
+            $("#msgAlert").hide();
+            $("form").submit(function (e) {
+                // if (!nameCheck()) e.preventDefault();
+                if (!emailCheck()) e.preventDefault();
+                if (!titleCheck()) e.preventDefault();
+                if (!msgCheck()) e.preventDefault();
+            });
+
         })
     </script>
 </head>
@@ -199,8 +220,8 @@
     <div class="contact_form p-4">
         <h3 class="mb-0">문의하기</h3>
         <form method="post" name="frm">
-            <label for="name" class="form-label mb-1"></label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="이름을 적어주세요">
+            <label for="name1" class="form-label mb-1"></label>
+            <input type="text" name="sname" id="name1" class="form-control" placeholder="이름을 적어주세요">
             <div id="nameAlert" class="form-text ps-2">이름이 필요합니다.</div>
 
             <label for="email" class="form-label mb-1 mt-3"></label>
@@ -222,7 +243,7 @@
 
     </div>
 
-    <script src="contact.js"></script>
+
 </body>
 
 </html>

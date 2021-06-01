@@ -1,15 +1,8 @@
-//$(".contact_form").hide();
-$("#contact").click(function () {
-    $(".contact_form").fadeIn(300);
-});
 
-$("#nameAlert").hide();
-$("#emailAlert").hide();
-$("#titleAlert").hide();
-$("#msgAlert").hide();
+
 
 function nameCheck() {
-    var name = $("#name");
+    var name = $("#name1");
     if ($(name).val().length < 1) {
         $("#nameAlert").show(100);
         $("#nameAlert").css({
@@ -31,6 +24,7 @@ function nameCheck() {
 
 function emailCheck() {
     var email = $("#email");
+    alert($(email).val().length);
     if ($(email).val().length < 1) {
         $("#emailHelp").hide();
         $("#emailAlert").show(100);
@@ -38,8 +32,10 @@ function emailCheck() {
             "color": "red",
             "font-size": "12px"
         });
+
         return false;
     }
+
     return true;
 }
 
@@ -68,7 +64,6 @@ function msgCheck() {
     }
     return true;
 }
-
 // function passCheck() {
 
 //     var pass = $("#pass");
@@ -121,12 +116,3 @@ function msgCheck() {
 //     return true;
 // }
 
-
-$(function () {
-    $("form").submit(function (e) {
-        if (!nameCheck()) e.preventDefault();
-        if (!emailCheck()) e.preventDefault();
-        if (!titleCheck()) e.preventDefault();
-        if (!msgCheck()) e.preventDefault();
-    });
-});
