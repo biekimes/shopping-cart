@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/breakingbadapi/static/css/main.2d21e9d2.chunk.css",
+    "main.js": "/breakingbadapi/static/js/main.f7deed7d.chunk.js",
+    "main.js.map": "/breakingbadapi/static/js/main.f7deed7d.chunk.js.map",
+    "runtime-main.js": "/breakingbadapi/static/js/runtime-main.13a7fed9.js",
+    "runtime-main.js.map": "/breakingbadapi/static/js/runtime-main.13a7fed9.js.map",
+    "static/js/2.3f54ed10.chunk.js": "/breakingbadapi/static/js/2.3f54ed10.chunk.js",
+    "static/js/2.3f54ed10.chunk.js.map": "/breakingbadapi/static/js/2.3f54ed10.chunk.js.map",
+    "index.html": "/breakingbadapi/index.html",
+    "static/css/main.2d21e9d2.chunk.css.map": "/breakingbadapi/static/css/main.2d21e9d2.chunk.css.map",
+    "static/js/2.3f54ed10.chunk.js.LICENSE.txt": "/breakingbadapi/static/js/2.3f54ed10.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/breakingbadapi/static/media/bg.085908ea.jpg",
+    "static/media/logo.e6ecab44.png": "/breakingbadapi/static/media/logo.e6ecab44.png",
+    "static/media/spinner.11d9cde8.gif": "/breakingbadapi/static/media/spinner.11d9cde8.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.13a7fed9.js",
+    "static/js/2.3f54ed10.chunk.js",
+    "static/css/main.2d21e9d2.chunk.css",
+    "static/js/main.f7deed7d.chunk.js"
+  ]
+}
