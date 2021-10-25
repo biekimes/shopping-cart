@@ -1,6 +1,6 @@
 {
   "name": "breaking-bad-api",
-  "homepage": "http:/biekimes.github.io/breakingbadapi",
+  "homepage": "git@github.com:biekimes/breakingbadapi.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
